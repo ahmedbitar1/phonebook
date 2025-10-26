@@ -1,0 +1,17 @@
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\bin\Release\net8.0\PhoneBook.Application.deps.json
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\bin\Release\net8.0\PhoneBook.Application.dll
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\bin\Release\net8.0\PhoneBook.Application.pdb
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\bin\Release\net8.0\PhoneBook.Core.dll
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\bin\Release\net8.0\PhoneBook.Infrastructure.dll
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\bin\Release\net8.0\PhoneBook.Core.pdb
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\bin\Release\net8.0\PhoneBook.Infrastructure.pdb
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\obj\Release\net8.0\PhoneBook.Application.csproj.AssemblyReference.cache
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\obj\Release\net8.0\PhoneBook.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\obj\Release\net8.0\PhoneBook.Application.AssemblyInfoInputs.cache
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\obj\Release\net8.0\PhoneBook.Application.AssemblyInfo.cs
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\obj\Release\net8.0\PhoneBook.Application.csproj.CoreCompileInputs.cache
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\obj\Release\net8.0\PhoneBoo.3B596BBF.Up2Date
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\obj\Release\net8.0\PhoneBook.Application.dll
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\obj\Release\net8.0\refint\PhoneBook.Application.dll
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\obj\Release\net8.0\PhoneBook.Application.pdb
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Application\obj\Release\net8.0\ref\PhoneBook.Application.dll

@@ -1,0 +1,43 @@
+﻿@model PhoneBookApp.Models.LoginViewModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Login";
+}
+
+<div class="login-page d-flex justify-content-center align-items-center" style="min-height:100vh;">
+    <div class="login-card p-4 rounded shadow-lg bg-white bg-opacity-75" style="width:350px;">
+        <h2 class="text-center mb-4 text-dark fw-bold">Welcome Back 👋</h2>
+
+        <!-- ✅ عرض رسالة الخطأ لو فيه -->
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger text-center fw-semibold">@ViewBag.Error</div>
+        }
+
+        <form method="post" asp-action="Index" asp-controller="Login">
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Username</label>
+                <input type="text" name="Username" class="form-control"
+                       value="@Model?.Username" placeholder="Enter username" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Password</label>
+                <input type="password" name="Password" class="form-control"
+                       placeholder="Enter password" required />
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary fw-semibold">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Focus on username input when page loads
+        document.querySelector('input[name="Username"]').focus();
+    </script>
+}

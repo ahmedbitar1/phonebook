@@ -1,0 +1,77 @@
+﻿@model IEnumerable<PhoneBookApp.Core.Entities.Person>
+
+@{
+    ViewData["Title"] = "People List";
+}
+
+<h2>📞 People List</h2>
+
+<div class="mb-3 d-flex align-items-center">
+    <input type="text" id="searchBox" class="form-control me-2"
+           placeholder="Search by name, email, department, or phone..."
+           value="@ViewBag.Search" />
+
+    <select id="locationSelect" class="form-select me-2" style="width:200px;">
+        <option value="">All Locations</option>
+        @foreach (var item in (SelectList)ViewBag.Locations)
+        {
+            if (ViewBag.SelectedLocationId == Convert.ToInt32(item.Value))
+            {
+                <option value="@item.Value" selected>@item.Text</option>
+            }
+            else
+            {
+                <option value="@item.Value">@item.Text</option>
+            }
+        }
+    </select>
+
+    <button id="searchBtn" class="btn btn-primary">🔍 Search</button>
+    <button id="resetBtn" class="btn btn-secondary ms-2">Reset</button>
+</div>
+
+@if (ViewBag.IsAdmin)
+{
+    <p>
+        <a class="btn btn-success" asp-action="Create">+ Add New Person</a>
+    </p>
+}
+<!-- ✅ جدول الأشخاص -->
+<div id="peopleTable">
+    @await Html.PartialAsync("_PeopleTable", Model)
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            function search(page = 1) {
+                var query = $('#searchBox').val();
+                var locationId = $('#locationSelect').val();
+
+                $.get('@Url.Action("Search", "People")',
+                    { searchQuery: query, locationId: locationId, pageNumber: page },
+                    function (data) {
+                        $('#peopleTable').html(data);
+                        $('#searchBox').val(query);
+                        $('#locationSelect').val(locationId);
+                    });
+            }
+
+            $('#searchBtn').click(function () { search(1); });
+            $('#searchBox').on('keyup', function (e) { if (e.key === 'Enter') search(1); });
+            $('#locationSelect').change(function () { search(1); });
+            $('#resetBtn').click(function () {
+                $('#searchBox').val('');
+                $('#locationSelect').val('');
+                search(1);
+            });
+
+            $(document).on('click', '.pagination a', function (e) {
+                e.preventDefault();
+                var page = $(this).text();
+                search(page);
+            });
+        });
+    </script>
+}
