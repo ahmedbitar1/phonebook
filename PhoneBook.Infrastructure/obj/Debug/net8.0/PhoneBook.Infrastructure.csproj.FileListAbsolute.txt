@@ -1,0 +1,17 @@
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\bin\Debug\net8.0\PhoneBook.Infrastructure.deps.json
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\bin\Debug\net8.0\PhoneBook.Infrastructure.dll
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\bin\Debug\net8.0\PhoneBook.Infrastructure.pdb
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\bin\Debug\net8.0\PhoneBook.Core.dll
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\bin\Debug\net8.0\PhoneBook.Core.pdb
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\obj\Debug\net8.0\PhoneBook.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\obj\Debug\net8.0\PhoneBook.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\obj\Debug\net8.0\PhoneBook.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\obj\Debug\net8.0\PhoneBook.Infrastructure.AssemblyInfo.cs
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\obj\Debug\net8.0\PhoneBook.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\obj\Debug\net8.0\PhoneBoo.73FB5EDC.Up2Date
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\obj\Debug\net8.0\PhoneBook.Infrastructure.dll
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\obj\Debug\net8.0\refint\PhoneBook.Infrastructure.dll
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\obj\Debug\net8.0\PhoneBook.Infrastructure.pdb
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\obj\Debug\net8.0\ref\PhoneBook.Infrastructure.dll
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\bin\Debug\net8.0\PhoneBook.Infrastructure.runtimeconfig.json
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Infrastructure\obj\Debug\net8.0\PhoneBook.Infrastructure.genruntimeconfig.cache

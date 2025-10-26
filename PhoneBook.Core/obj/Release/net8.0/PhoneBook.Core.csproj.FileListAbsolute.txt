@@ -1,0 +1,11 @@
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Core\bin\Release\net8.0\PhoneBook.Core.deps.json
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Core\bin\Release\net8.0\PhoneBook.Core.dll
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Core\bin\Release\net8.0\PhoneBook.Core.pdb
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Core\obj\Release\net8.0\PhoneBook.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Core\obj\Release\net8.0\PhoneBook.Core.AssemblyInfoInputs.cache
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Core\obj\Release\net8.0\PhoneBook.Core.AssemblyInfo.cs
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Core\obj\Release\net8.0\PhoneBook.Core.csproj.CoreCompileInputs.cache
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Core\obj\Release\net8.0\PhoneBook.Core.dll
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Core\obj\Release\net8.0\refint\PhoneBook.Core.dll
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Core\obj\Release\net8.0\PhoneBook.Core.pdb
+C:\Users\ahmed.essamm\source\repos\PhoneBookApp\PhoneBook.Core\obj\Release\net8.0\ref\PhoneBook.Core.dll

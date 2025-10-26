@@ -1,0 +1,76 @@
+﻿@model PhoneBookApp.Core.Entities.Person
+
+@{
+    ViewData["Title"] = "Add New Person";
+}
+
+<h2>Add New Person</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="FullName" class="form-label"></label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Department" class="form-label"></label>
+        <input asp-for="Department" class="form-control" />
+        <span asp-validation-for="Department" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="LocationId" class="form-label">Location</label>
+        <select asp-for="LocationId" asp-items="ViewBag.Locations" class="form-select"></select>
+        <span asp-validation-for="LocationId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label>Phone Numbers</label>
+        <div id="phoneNumbers">
+            @{
+                var numbers = ViewBag.PhoneNumbers as List<string> ?? new List<string> { "" };
+                foreach (var number in numbers)
+                {
+                    // بنشوف لو ModelState فيه Error خاص بالرقم ده
+                    var phoneError = ViewData.ModelState[string.Empty]?.Errors
+                    .FirstOrDefault(e => e.ErrorMessage.Contains(number));
+
+                    <div class="mb-2">
+                        <input type="text" name="phoneNumbers" value="@number" class="form-control mb-1" placeholder="Enter phone number" />
+                        @if (phoneError != null)
+                        {
+                            <span class="text-danger">@phoneError.ErrorMessage</span>
+                        }
+                    </div>
+                }
+            }
+        </div>
+
+        <button type="button" class="btn btn-sm btn-secondary" id="addPhone">+ Add another</button>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.getElementById("addPhone").addEventListener("click", function () {
+            const container = document.getElementById("phoneNumbers");
+            const div = document.createElement("div");
+            div.className = "mb-2";
+            div.innerHTML = `
+                <input type="text" name="phoneNumbers" class="form-control mb-1" placeholder="Enter phone number" />
+            `;
+            container.appendChild(div);
+        });
+    </script>
+}

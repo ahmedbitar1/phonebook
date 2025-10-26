@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PhoneBook</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PhoneBookApp.styles.css" asp-append-version="true" />
+</head>
+<body>
+    @{
+        // نجيب اسم الكنترولر والاكشن الحاليين
+        var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+        var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+
+        // نحدد إذا كنا في صفحة اللوجين
+        bool isLoginPage = currentController == "Login" && currentAction == "Index";
+    }
+
+    @if (!isLoginPage)
+    {
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" asp-controller="People" asp-action="Index">PhoneBook</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="People" asp-action="Index">All People</a>
+                            </li>
+                            @if (ViewBag.IsAdmin == true)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-controller="People" asp-action="Create">Add Person</a>
+                                </li>
+                            }
+                            <li class="nav-item ms-auto">
+                                <a class="nav-link text-danger" asp-controller="Login" asp-action="Logout">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                         class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                              d="M10 12a.5.5 0 0 1-.5.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5h4.5a.5.5 0 0 1 0 1H5A.5.5 0 0 0 4.5 5v6A.5.5 0 0 0 5 11.5h4.5a.5.5 0 0 1 .5.5z" />
+                                        <path fill-rule="evenodd"
+                                              d="M13.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L12.293 8l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                        <path fill-rule="evenodd"
+                                              d="M12 8a.5.5 0 0 0-.5-.5H6.5a.5.5 0 0 0 0 1H11.5A.5.5 0 0 0 12 8z" />
+                                    </svg>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    }
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container text-center">
+            &copy; 2025 - PhoneBook of Bayt EL Khebra Group
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
